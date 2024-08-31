@@ -71,11 +71,13 @@ def process_and_classify_images(base_folders, base_path, brightness_bins):
     normalized_brightness_values = normalize_values(all_brightness_values)
     log_sharpness_values = [log_transform(value) for value in all_sharpness_values]
     normalized_sharpness_values = normalize_values(log_sharpness_values)
-    #     # 샤프니스의 분위수 계산
+
+    # 선명도 분위수 계산 시
     # sharpness_quantiles = np.percentile(normalized_sharpness_values, [20, 40, 60, 80])
 
     # # 정규화된 샤프니스 값에 기반한 동적 구간 생성
     # sharpness_bins = list(sharpness_quantiles) + [1.0]
+
     # 최소값과 최대값을 기준으로 5개의 구역으로 나누기 위한 경계값 계산
     min_sharpness = min(normalized_sharpness_values)
     max_sharpness = max(normalized_sharpness_values)
@@ -137,8 +139,8 @@ def plot_histogram(brightness_values, sharpness_values):
     plt.show()
 
 if __name__ == '__main__':
-    base_folders = ['no_remove']
-    base_path = "./after"
+    base_folders = ['notsorting_images']
+    base_path = "./after_sorting"
     brightness_bins = [0.2, 0.4, 0.6, 0.8]
     # sharpness_bins = [0.4, 0.4, 0.6, 0.8]
 
@@ -152,5 +154,5 @@ if __name__ == '__main__':
         print(f"Class {class_name} from labels: {count} images")
 
 
-    # 히스토그램 그리기
-    plot_histogram(all_brightness_values, all_sharpness_values)
+    # 밝기랑 선명도 기반 히스토그램 그리기
+    # plot_histogram(all_brightness_values, all_sharpness_values)
