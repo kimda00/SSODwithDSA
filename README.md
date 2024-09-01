@@ -10,6 +10,7 @@
 
 ```bash
 python dsa_train.py --cfg configs/ssod/custom/coco.yaml
+```
 
 yaml 파일 설정 :
  - project name 수정
@@ -21,11 +22,13 @@ yaml 파일 설정 :
 1. BS 별 폴더 분리
 ```bash
 python divide_bs.py
+```
 
 2. 각 구역 별 이미지 계산 후 추출
 
 ```bash
 python get_diversity_images.py
+```
 
 3. txt파일 만들기
 labeled, unlabeled 이미지를 분리하여 txt파일 제작
@@ -33,3 +36,4 @@ labeled, unlabeled 이미지를 분리하여 txt파일 제작
 
 ```bash
 pythom ./utils/get_txt_file_for_ssod.py 
+```
