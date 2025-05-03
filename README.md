@@ -30,7 +30,7 @@
 - yaml 파일 설정:
     - project name 수정
     - 필요한 경우 epochs, weights 경로 수정
-    - 
+      
 ![image](https://github.com/user-attachments/assets/e771469e-e50e-469d-ae64-02164e3c509d)
 
 2. 데이터 선별 알고리즘 적용
