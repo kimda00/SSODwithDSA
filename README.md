@@ -31,9 +31,8 @@
     - project name 수정
     - 필요한 경우 epochs, weights 경로 수정
     - 
-![전체 프레임워크](https://prod-files-secure.s3.us-west-2.amazonaws.com/9097862f-3e14-4465-94a2-a160eec4fbab/86e15a43-cd8a-49a6-8420-931a3c19fabb/image.png)
+![image](https://github.com/user-attachments/assets/e771469e-e50e-469d-ae64-02164e3c509d)
 
-전체 프레임워크
 2. 데이터 선별 알고리즘 적용
 
 #### BS 별 폴더 분리
