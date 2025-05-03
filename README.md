@@ -79,7 +79,7 @@ mAP50 및 F1-score 주요 결과:
 - 효율적인 학습 및 인식 방법론 제안
 
 ---
-본 프로젝트는 다음 논문의 실험 구현 코드입니다:
+추가적인 실험 및 논문 정보
 - 김다영, "데이터 선별 및 준지도 객체 검출 기반 유니버설 신호등 인식", 제어로봇시스템학회, 2024년 5월
 [논문 링크](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003105682)
 
