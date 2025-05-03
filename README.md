@@ -34,6 +34,9 @@
 ![image](https://github.com/user-attachments/assets/e771469e-e50e-469d-ae64-02164e3c509d)
 
 2. 데이터 선별 알고리즘 적용
+- **밝기와 선명도 기반**으로 데이터를 선별하는 알고리즘 제안.
+- 선별된 데이터를 이용해 더 높은 성능을 낼 수 있는 라벨링 데이터셋 구축.
+![image](https://github.com/user-attachments/assets/7856af6c-80cc-4c25-9de5-9c02d1922cf7)
 
 #### BS 별 폴더 분리
 ```bash
@@ -62,6 +65,7 @@ python dsa_train.py --cfg configs/ssod/custom/coco.yaml
 - 데이터 선별 알고리즘 적용 시 비적용 대비 성능 향상
 - 일부 데이터셋에서 100% 지도학습 대비 준지도학습이 더 높은 성능
 - 훈련 시간 단축 (예: 10.1일 → 1.5일)
+![image](https://github.com/user-attachments/assets/d8386daf-ae88-4b4e-a20e-9a5eb7f9b2fd)
 
 mAP50 및 F1-score 주요 결과:
 - LOKI: mAP50=0.935 / F1=0.919 (40% 라벨링)
